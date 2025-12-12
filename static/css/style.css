@@ -1,10 +1,17 @@
-body {background-color:rgb(0, 0, 0);}
+body {
+  background-color:rgb(8, 97, 0);
+  background: repeating-linear-gradient(
+    180deg,
+    rgb(8, 97, 0) -1px,
+    #053700 6px
+  );
+}
 
-h1 { font-family:  'biome', 'Courier New', Courier, monospace; color: aqua;}
+h1 { font-family:  'fixedsys', 'Courier New', Courier, monospace; color: rgb(95, 249, 0);}
 
-h2 { font-family:  'biome', 'Courier New', Courier, monospace; color: aqua;}
+h2 { font-family:  'fixedsys', 'Courier New', Courier, monospace; color: rgb(95, 249, 0);}
 
-h3 { font-family:  'biome', 'Courier New', Courier, monospace; color: aqua;}
+h3 { font-family:  'fixedsys', 'Courier New', Courier, monospace; color: rgb(95, 249, 0);}
 
 @font-face {
   font-family: 'biome';
@@ -13,10 +20,39 @@ h3 { font-family:  'biome', 'Courier New', Courier, monospace; color: aqua;}
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'orbitron';
+  src: url(/static/fonts/orbitron/orbitron-medium.otf);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'fixedsys';
+  src: url(/static/fonts/fixedsys/FSEX300.ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 form {
     font-size: large;
-    color: aqua;
-    font-family: 'biome', 'Courier New', Courier, monospace;
+    color: rgb(95, 249, 0);
+    font-family: 'fixedsys', 'Courier New', Courier, monospace;
+}
+input {
+    font-size: large;
+    color: rgb(95, 249, 0);
+    font-family: 'fixedsys', 'Courier New', Courier, monospace;
+    background: repeating-linear-gradient(
+      180deg,
+      #021a00 -1px,
+      #064300 6px
+    );
+}
+label {
+    font-size: large;
+    color: rgb(95, 249, 0);
+    font-family: 'fixedsys', 'Courier New', Courier, monospace;
 }
 nav {
     overflow: auto;
@@ -24,35 +60,38 @@ nav {
     word-spacing: 100px;
 }
 .text-block {
-  border: 2px solid aqua; 
+  border: 2px solid rgb(95, 249, 0); 
   padding: 1em;           
   border-radius: 8px;      
-  background-color: black;
-
+  background: repeating-linear-gradient(
+    180deg,
+    #021a00 -1px,
+    #064300 6px
+  );
 }
 p {
     font-size: large;
-    color: aqua;
-    font-family: 'biome', 'Courier New', Courier, monospace;
+    color: rgb(95, 249, 0);
+    font-family: 'fixedsys', 'Courier New', Courier, monospace;
 }
 a {
     font-size: xx-large;
-    color: aqua;
-    font-family: 'biome', 'Courier New', Courier, monospace;
+    color: rgb(95, 249, 0);
+    font-family: 'fixedsys', 'Courier New', Courier, monospace;
 }
 
-li {color: aqua;
-font-family: 'biome', 'Courier New', Courier, monospace;
+li {color: rgb(95, 249, 0);
+font-family: 'fixedsys', 'Courier New', Courier, monospace;
 font-size: large;}
 
-div {color: aqua;
-  font-family: 'biome', 'Courier New', Courier, monospace;}
+div {color: rgb(95, 249, 0);
+  font-family: 'fixedsys', 'Courier New', Courier, monospace;}
 .dag {
   font-size: xx-large;
 }
 
-ol {color: aqua;
-  font-family: 'biome', 'Courier New', Courier, monospace;
+ol {color: rgb(95, 249, 0);
+  font-family: 'fixedsys', 'Courier New', Courier, monospace;
   font-size: large;}
 
 .container {
@@ -66,7 +105,7 @@ ol {color: aqua;
 }
 .item {
   flex: auto; /* alle får lik plass */
-  border: 2px solid aqua;
+  border: 2px solid rgb(95, 249, 0);
   padding: 10px;
   margin: 10px;
   justify-content: center; /* midtstilt */
@@ -75,7 +114,7 @@ ol {color: aqua;
 .imgitem {
   flex: 1;  
   height: auto;
-  border: 2px solid aqua;
+  border: 2px solid rgb(95, 249, 0);
   align-self: center;
   padding: 10px;
   margin: 10px;
