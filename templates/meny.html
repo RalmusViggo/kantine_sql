@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %} meny {% endblock %}
+
+{% block content %}
+    <div class="dag">Dag: {{ day.strftime("%A") }}</div>
+    <h2> Meny: </h2>
+    <ol>
+    {% for mat in dag[day.strftime("%A")] %}
+     <li> {{ mat }} </li>
+    {% endfor %}
+    </ol>
+    <h2> 
+        dagens varmmat:
+    </h2>
+    <div>
+        {% for varm in varmmat[day.strftime("%A")] %}
+        <br>
+        {{ varm }}
+        {% endfor %}
+    </div>
+
+    
+{% endblock %}

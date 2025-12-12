@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %} Hjemmeside {% endblock %}
+
+{% block content %}
+<h1> Havglytt skolekantine </h1>
+<div> denne nettsiden gir en oversikt over hva Havglytt skole's kantine tilbyr av mat og mat-varer. </div>
+<br>
+<p> gjerne lag en bruker eller logg in: </p>
+<p><a href="{{ url_for('register') }}">Registrer ny bruker</a></p>
+<p><a href="{{ url_for('login') }}">Logg inn</a></p>
+<br>
+<h2> vi har blant annet epler: </h2>
+
+ 
+<img class={{ beple.class }} src={{ beple.bildekilde }} width="300" height="300"> 
+
+{% endblock %}

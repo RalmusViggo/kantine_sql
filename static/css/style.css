@@ -1,0 +1,108 @@
+body {background-color:rgb(0, 0, 0);}
+
+h1 { font-family:  'biome', 'Courier New', Courier, monospace; color: aqua;}
+
+h2 { font-family:  'biome', 'Courier New', Courier, monospace; color: aqua;}
+
+h3 { font-family:  'biome', 'Courier New', Courier, monospace; color: aqua;}
+
+@font-face {
+  font-family: 'biome';
+  src: url(/static/fonts/OnlineWebFonts_COM_69909bd400587d0ba6c81cc1d5ef66ac/BiomeW01Regular/BiomeW01Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+form {
+    font-size: large;
+    color: aqua;
+    font-family: 'biome', 'Courier New', Courier, monospace;
+}
+nav {
+    overflow: auto;
+    text-align: center;
+    word-spacing: 100px;
+}
+.text-block {
+  border: 2px solid aqua; 
+  padding: 1em;           
+  border-radius: 8px;      
+  background-color: black;
+
+}
+p {
+    font-size: large;
+    color: aqua;
+    font-family: 'biome', 'Courier New', Courier, monospace;
+}
+a {
+    font-size: xx-large;
+    color: aqua;
+    font-family: 'biome', 'Courier New', Courier, monospace;
+}
+
+li {color: aqua;
+font-family: 'biome', 'Courier New', Courier, monospace;
+font-size: large;}
+
+div {color: aqua;
+  font-family: 'biome', 'Courier New', Courier, monospace;}
+.dag {
+  font-size: xx-large;
+}
+
+ol {color: aqua;
+  font-family: 'biome', 'Courier New', Courier, monospace;
+  font-size: large;}
+
+.container {
+    display: flex;   /* Aktiverer flexbox */
+    flex-direction: row; /* Standard - side ved side */
+    justify-content: center; /* midtstilt */
+    align-items: center; /* midt på høyden */
+    flex-wrap: wrap; /* Lar elementene gå ned på neste linje om de ikke får plass. */
+    gap: 50px; /* Gir mellomrom mellom elementene. */
+
+}
+.item {
+  flex: auto; /* alle får lik plass */
+  border: 2px solid aqua;
+  padding: 10px;
+  margin: 10px;
+  justify-content: center; /* midtstilt */
+  align-items: center;
+}
+.imgitem {
+  flex: 1;  
+  height: auto;
+  border: 2px solid aqua;
+  align-self: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Inserting this collapsed row between two flex items will make 
+ * the flex item that comes after it break to a new row */
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.T {
+  font-size: xx-large;
+}
+
+.item2 {
+  flex: auto; /* alle får lik plass */
+  padding: 10px;
+  margin: 10px;
+  justify-content: center; /* midtstilt */
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+}
+
+/* img {
+  max-width: auto; Ensures image doesn't exceed parent's width 
+  height: auto;
+} */
