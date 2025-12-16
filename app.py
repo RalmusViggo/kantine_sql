@@ -19,7 +19,7 @@ def get_conn():
 
 @app.route('/')
 def index():
-    beple = {"class": "eple", "bildekilde": "/static/images/apple_inv.png"}
+    beple = {"class": "eple", "bildekilde": "/static/images/pixel_art_large.png"}
     return render_template("index.html", beple = beple)
 
 # Registrering
