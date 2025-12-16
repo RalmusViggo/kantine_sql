@@ -110,6 +110,11 @@ ol {color: rgb(95, 249, 0);
   margin: 10px;
   justify-content: center; /* midtstilt */
   align-items: center;
+  background: repeating-linear-gradient(
+    180deg,
+    #021a00 -1px,
+    #064300 6px
+  );
 }
 .imgitem {
   flex: 1;  
