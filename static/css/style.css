@@ -5,6 +5,7 @@ body {
     rgb(8, 97, 0) -1px,
     #053700 6px
   );
+  padding-top:80px;
 }
 
 h1 { font-family:  'fixedsys', 'Courier New', Courier, monospace; color: rgb(95, 249, 0);}
@@ -68,6 +69,10 @@ nav {
     #021a00 -1px,
     #064300 6px
   );
+  position: fixed;
+  top: 0;
+  width: 96.5%;
+  
 }
 p {
     font-size: large;
@@ -86,7 +91,7 @@ font-size: large;}
 
 div {color: rgb(95, 249, 0);
   font-family: 'fixedsys', 'Courier New', Courier, monospace;}
-.dag {
+.dagi {
   font-size: xx-large;
 }
 

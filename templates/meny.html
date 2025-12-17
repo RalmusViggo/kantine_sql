@@ -3,13 +3,16 @@
 {% block title %} meny {% endblock %}
 
 {% block content %}
-    <div class="dag">Dag: {{ day.strftime("%A") }}</div>
+    <br>
+    <div class="dagi">Dag: {{ day.strftime("%A") }}</div>
     <h2> Meny: </h2>
+
     <ol>
-    {% for mat in dag[day.strftime("%A")] %}
-     <li> {{ mat }} </li>
-    {% endfor %}
+        {% for item in dag[day.strftime('%A')] %}
+        <li> {{ item }} </li>
+        {% endfor %}
     </ol>
+
     <h2> 
         dagens varmmat:
     </h2>

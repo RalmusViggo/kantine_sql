@@ -83,21 +83,21 @@ def welcome():
 def meny():
     day = date.today()
     dag = {
-        "Monday" : {
+        "Monday" : [
             "knekkebrød", "brød", "leverpostei", "kaviar", "ost"
-            },
-        "Tuesday" : {
+            ],
+        "Tuesday" : [
             "knekkebrød", "brød", "jordbær syltetøy", "bringebær syltetøy", "skinke"
-            },
-        "Wednesday" : {
+            ],
+        "Wednesday" : [
             "knekkebrød", "brød", "salami", "brunost", "ost"
-            },
-        "Thursday" : {
+            ],
+        "Thursday" : [
             "knekkebrød", "brød", "smør", "skinke", "kaviar"
-            },
-        "Friday" : {
+            ],
+        "Friday" : [
             "knekkebrød", "brød", "kaviar", "makrellitomat", "sursild"
-            }
+            ]
         },
     varmmat = {
             "Monday" : {
@@ -116,7 +116,24 @@ def meny():
                 "laktose-fri pizza med pepperoni."
                 }
             }
-    return render_template("meny.html", day=day, dag=dag, varmmat=varmmat)
+    return render_template("meny.html", day=day, varmmat=varmmat, 
+                           dag={
+        "Monday" : [
+            "knekkebrød", "brød", "leverpostei", "kaviar", "ost"
+            ],
+        "Tuesday" : [
+            "knekkebrød", "brød", "jordbær syltetøy", "bringebær syltetøy", "skinke"
+            ],
+        "Wednesday" : [
+            "knekkebrød", "brød", "salami", "brunost", "ost"
+            ],
+        "Thursday" : [
+            "knekkebrød", "brød", "smør", "skinke", "kaviar"
+            ],
+        "Friday" : [
+            "knekkebrød", "brød", "kaviar", "makrellitomat", "sursild"
+            ]
+        })
 
 @app.route('/varer.html')
 def varer():
