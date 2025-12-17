@@ -1,4 +1,5 @@
-# Havglytt Skolekantine
+# Havglytt Skolekantine 
+lenke til nettsiden: http://172.20.128.25/
 
 Velkommen til Havglytt skolekantine! Dette prosjektet er en webapplikasjon som gir en oversikt over hva kantinen tilbyr av mat og matvarer.
 
